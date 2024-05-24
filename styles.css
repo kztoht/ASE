@@ -1,41 +1,20 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.6;
-    padding: 20px;
-    background-color: #f4f4f4; /* Light gray background to reduce eye strain */
+    margin: 20px;
 }
 
-.dropdown {
-    cursor: pointer;
-    background-color: #fff; /* White background for dropdowns */
-    border: 1px solid #ccc; /* Light gray border */
-    padding: 5px;
-    border-radius: 4px;
-    width: auto;
+h1 {
+    text-align: center;
 }
 
-.correct {
-    background-color: #c8e6c9; /* Green background for correct answers */
-    border-color: #2e7d32; /* Dark green border for contrast */
+#text {
+    line-height: 1.5;
 }
 
-.incorrect {
-    background-color: #ffcdd2; /* Red background for incorrect answers */
-    border-color: #c62828; /* Dark red border for contrast */
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #4CAF50; /* Material design green for button */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px; /* Extra space above the button */
-}
-
-button:hover {
-    background-color: #45a049; /* Slightly darker green on hover */
+#text [name="article"] {
+    background-color: #eee;
+    padding: 2px 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
