@@ -1,20 +1,40 @@
+body {
+  font-family: Arial, sans-serif; /* Sets a readable typeface */
+  line-height: 1.6; /* Increases line spacing for better readability */
+  padding: 20px; /* Adds padding around the content for aesthetics */
+}
+
 .dropdown {
   cursor: pointer;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
   padding: 3px 8px;
   border-radius: 4px;
+  user-select: none; /* Prevents the text within the span from being selectable, enhancing the dropdown illusion */
 }
 
 .correct {
-  background-color: #c8e6c9; /* green */
+  background-color: #c8e6c9; /* green, for correct answers */
 }
 
 .incorrect {
-  background-color: #ffcdd2; /* red */
+  background-color: #ffcdd2; /* red, for incorrect answers */
 }
 
 p {
   margin-top: 20px; /* Adjust the space above each paragraph */
   margin-bottom: 20px; /* Adjust the space below each paragraph */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker shade for hover effect */
 }
