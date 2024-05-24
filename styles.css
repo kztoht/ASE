@@ -1,43 +1,38 @@
 body {
-  font-family: Arial, sans-serif; /* Sets a readable typeface */
-  font-size: 18px; /* Larger text for readability */
-  line-height: 1.6; /* Increases line spacing for better readability */
-  padding: 20px; /* Adds padding around the content for aesthetics */
-  background-color: #f4f4f4; /* Light grey background for less strain on eyes */
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
 .dropdown {
-  cursor: pointer;
-  background-color: #ffffff; /* White background for dropdown to stand out */
-  border: 1px solid #ccc;
-  padding: 5px 10px;
-  border-radius: 4px;
-  user-select: none; /* Prevents text selection for better user experience */
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 4px;
+    user-select: none;
 }
 
 .correct {
-  background-color: #c8e6c9; /* Green for correct answers */
+    background-color: #c8e6c9; /* Green for correct */
 }
 
 .incorrect {
-  background-color: #ffcdd2; /* Red for incorrect answers */
-}
-
-p {
-  margin-top: 1.5em; /* Adjusts the space above each paragraph */
-  margin-bottom: 1.5em; /* Adjusts the space below each paragraph */
+    background-color: #ffcdd2; /* Red for incorrect */
 }
 
 button {
-  padding: 10px 20px;
-  background-color: #4CAF50; /* Material Design Green */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px; /* Larger font for the button */
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 button:hover {
-  background-color: #45a049; /* Darker shade for hover effect */
+    background-color: #45a049;
 }
