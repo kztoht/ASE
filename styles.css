@@ -14,18 +14,20 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+    max-width: 90%;
     width: 100%;
+    box-sizing: border-box;
 }
 
 h1 {
     text-align: center;
     color: #333;
+    font-size: 1.5em;
 }
 
 p {
     line-height: 1.6;
-    font-size: 18px;
+    font-size: 1em;
 }
 
 select {
@@ -36,7 +38,7 @@ button {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 1em;
     background-color: #4CAF50;
     color: white;
     border: none;
