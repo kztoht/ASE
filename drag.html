@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Article Exercise</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Article Exercise</h1>
+        <p id="instructions">Drag and drop the correct articles (a, an, the) into the blanks. You will receive immediate feedback on your choice.</p>
+        <div id="passage">
+            Minamiosawa, <span class="blank" data-answer="a"></span> suburban town located 40 kilometers from <span class="blank" data-answer="the"></span> Central Tokyo, offers <span class="blank" data-answer="a"></span> unique college experience for students. Life in Minamiosawa combines <span class="blank" data-answer="the"></span> tranquility of rural living with <span class="blank" data-answer="the"></span> convenience of urban amenities.
+        </div>
+        <div id="articles">
+            <div class="article" draggable="true">a</div>
+            <div class="article" draggable="true">an</div>
+            <div class="article" draggable="true">the</div>
+        </div>
+        <p id="result"></p>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
