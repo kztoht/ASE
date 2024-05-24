@@ -1,0 +1,15 @@
+.dropdown {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.correct {
+  background-color: #c8e6c9; /* green */
+}
+
+.incorrect {
+  background-color: #ffcdd2; /* red */
+}
