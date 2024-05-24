@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Article Exercise - Articles</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Article Usage Exercise</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>English Article Exercise: Articles</h1>
-    <p id="text" style="color: red;">  Minamiosawa, [<select name="article"></select>] suburban town located 40 kilometers from central Tokyo, offers [<select name="article"></select>] unique college experience for students. Life in Minamiosawa combines [the] tranquility of rural living with [the] convenience of urban amenities. 
-
-        <br><br>
-
-        A [<select name="article"></select>] typical day for [<select name="article"></select>] college student begins with breakfast at [<select name="article"></select>] local café, where [the] smell of freshly baked bread fills [the] air. Afterward, they head to [the] university, [<select name="article"></select>] modern campus nestled among green hills. [The] university library, [an] architectural marvel, is often [the] first stop for students who want to get [<select name="article"></select>] head start on their studies. [The] library has vast collections of books and [a] state-of-[the]-art digital resource center.
-
-        <br><br>
-
-        Classes in Minamiosawa are known for their rigorous academic standards. [A] professor at [the] university might assign research projects that require extensive fieldwork. For instance, [a] biology student might spend [<select name="article"></select>] day at [the] nearby nature reserve, collecting samples and observing wildlife. [The] nature reserve, which is home to various species of plants and animals, is [a] popular spot for both students and tourists.
-
-        <br><br>
-
-        During lunch breaks, students often gather at [the] university cafeteria, which offers [a] variety of dishes, from traditional Japanese cuisine to international fare. [The] cafeteria is [a] bustling place, filled with [the] chatter of friends discussing [the] latest lecture or planning their weekend activities.
-
-        <br><br>
-
-        Despite [the] academic pressures, college life in Minamiosawa is not all about studying. [The] town has [a] vibrant social scene, with numerous festivals and events throughout [the] year. One of [the] highlights is [the] annual cherry blossom festival, where [the] entire community comes together to celebrate [the] beauty of [the] sakura trees.
-
-        <br><br>
-
-        Living in Minamiosawa also means having access to excellent public transportation. [A] moderate train ride can take students to central Tokyo, where they can enjoy [the] city's numerous attractions, from museums to shopping districts.
-
-        <br><br>
-
-        Overall, Minamiosawa provides [<select name="article"></select>] balanced college experience, blending [the] serenity of [a] small town with [the] excitement of nearby Tokyo. For many students, it is [the] perfect place to learn, grow, and enjoy their university years.
-    </p>
-    <button onclick="checkAnswers()">Submit Answers</button>
-    <p id="feedback"></p>
-    <script src="script.js"></script>
+<div id="container">
+    <div id="content">
+        <p>Minamiosawa, <select id="word1" class="dropdown">
+            <option value="">--select--</option>
+            <option value="[]">[]</option>
+            <option value="a">a</option>
+            <option value="an">an</option>
+            <option value="the">the</option>
+            </select> suburban town located 40 kilometers from central Tokyo, offers <select id="word2" class="dropdown">
+            <option value="">--select--</option>
+            <option value="[]">[]</option>
+            <option value="a">a</option>
+            <option value="an">an</option>
+            <option value="the">the</option>
+            </select> unique college experience for students. Life in Minamiosawa combines <select id="word3" class="dropdown">
+            <option value="">--select--</option>
+            <option value="[]">[]</option>
+            <option value="a">a</option>
+            <option value="an">an</option>
+            <option value="the">the</option>
+            </select> tranquility of rural living with <select id="word4" class="dropdown">
+            <option value="">--select--</option>
+            <option value="[]">[]</option>
+            <option value="a">a</option>
+            <option value="an">an</option>
+            <option value="the">the</option>
+            </select> convenience of urban amenities.</p>
+        
+        <!-- More paragraphs with dropdowns -->
+        
+        <button onclick="checkAnswers()">Submit</button>
+        <div id="feedback"></div>
+    </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
