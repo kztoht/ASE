@@ -1,38 +1,41 @@
 body {
-    font-family: Arial, sans-serif;
-    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
     line-height: 1.6;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Light gray background to reduce eye strain */
 }
 
 .dropdown {
     cursor: pointer;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
+    background-color: #fff; /* White background for dropdowns */
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 5px;
     border-radius: 4px;
-    user-select: none;
+    width: auto;
 }
 
 .correct {
-    background-color: #c8e6c9; /* Green for correct */
+    background-color: #c8e6c9; /* Green background for correct answers */
+    border-color: #2e7d32; /* Dark green border for contrast */
 }
 
 .incorrect {
-    background-color: #ffcdd2; /* Red for incorrect */
+    background-color: #ffcdd2; /* Red background for incorrect answers */
+    border-color: #c62828; /* Dark red border for contrast */
 }
 
 button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Material design green for button */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin-top: 20px; /* Extra space above the button */
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Slightly darker green on hover */
 }
