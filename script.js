@@ -1,24 +1,20 @@
-function checkAnswers() {
-    const dropdowns = document.querySelectorAll('.dropdown');
+document.getElementById('submitBtn').addEventListener('click', function() {
+    const selects = document.querySelectorAll('.article');
     let allCorrect = true;
-    let feedback = "";
 
-    dropdowns.forEach(dropdown => {
-        const selectedValue = dropdown.value;
-        const correctValue = dropdown.dataset.correct;
-
-        if (selectedValue !== correctValue) {
+    selects.forEach(select => {
+        const correctAnswer = select.getAttribute('data-answer');
+        if (select.value.toLowerCase() !== correctAnswer.toLowerCase()) {
+            select.classList.add('wrong');
             allCorrect = false;
-            dropdown.style.backgroundColor = "orange"; // Highlight incorrect dropdown
-            feedback += "Incorrect answer: " + correctValue + " should be selected. ";
         } else {
-            dropdown.style.backgroundColor = ""; // Reset background color
+            select.classList.remove('wrong');
         }
     });
 
     if (allCorrect) {
-        feedback = "All answers are correct!";
+        alert('All answers are correct!');
+    } else {
+        alert('Some answers are incorrect. Please try again.');
     }
-
-    document.getElementById('feedback').innerText = feedback;
-}
+});
