@@ -4,9 +4,15 @@ function checkAnswers() {
     let feedback = "";
 
     dropdowns.forEach(dropdown => {
-        if (dropdown.value !== dropdown.options[dropdown.selectedIndex].value) {
+        const selectedValue = dropdown.value;
+        const correctValue = dropdown.dataset.correct;
+
+        if (selectedValue !== correctValue) {
             correct = false;
-            feedback += "Incorrect answer: " + dropdown.options[dropdown.selectedIndex].value + " should be selected. ";
+            dropdown.style.backgroundColor = "orange"; // Highlight incorrect dropdown
+            feedback += "Incorrect answer: " + correctValue + " should be selected. ";
+        } else {
+            dropdown.style.backgroundColor = ""; // Reset background color
         }
     });
 
