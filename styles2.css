@@ -58,6 +58,10 @@ button:hover {
     margin-bottom: 20px;
 }
 
+.link-container.left {
+    text-align: left;
+}
+
 .fancy-link {
     color: #4CAF50;
     text-decoration: none;
