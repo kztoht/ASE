@@ -1,6 +1,6 @@
 function checkAnswers() {
     const dropdowns = document.querySelectorAll('.dropdown');
-    let correct = true;
+    let allCorrect = true;
     let feedback = "";
 
     dropdowns.forEach(dropdown => {
@@ -8,7 +8,7 @@ function checkAnswers() {
         const correctValue = dropdown.dataset.correct;
 
         if (selectedValue !== correctValue) {
-            correct = false;
+            allCorrect = false;
             dropdown.style.backgroundColor = "orange"; // Highlight incorrect dropdown
             feedback += "Incorrect answer: " + correctValue + " should be selected. ";
         } else {
@@ -16,7 +16,7 @@ function checkAnswers() {
         }
     });
 
-    if (correct) {
+    if (allCorrect) {
         feedback = "All answers are correct!";
     }
 
