@@ -1,20 +1,46 @@
 body {
     font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.dropdown {
+    padding: 5px;
     font-size: 16px;
-    margin: 20px;
 }
 
-h1 {
-    text-align: center;
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-#text {
-    line-height: 1.5;
+button:hover {
+    background-color: #0056b3;
 }
 
-#text select {
-    background-color: #eee;
-    padding: 2px 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+#feedback {
+    margin-top: 20px;
+    font-weight: bold;
 }
