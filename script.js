@@ -5,10 +5,10 @@ document.getElementById('submitBtn').addEventListener('click', function() {
     selects.forEach(select => {
         const correctAnswer = select.getAttribute('data-answer');
         if (select.value.toLowerCase() !== correctAnswer.toLowerCase()) {
-            select.classList.add('wrong');
+            select.style.backgroundColor = 'orange';
             allCorrect = false;
         } else {
-            select.classList.remove('wrong');
+            select.style.backgroundColor = '';
         }
     });
 
