@@ -12,7 +12,7 @@ h1 {
     line-height: 1.5;
 }
 
-#text [name="article"] {
+#text select {
     background-color: #eee;
     padding: 2px 5px;
     border: 1px solid #ccc;
