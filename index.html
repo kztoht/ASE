@@ -17,6 +17,22 @@
             color: #d3d3d3; /* Light grey color for the header text */
             padding: 20px;
             text-align: center;
+            position: relative;
+        }
+        .teaching-home-link {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            text-decoration: none;
+            color: #d3d3d3; /* Light grey color for the teaching home link */
+            font-size: 1em;
+            padding: 10px;
+            background-color: #333;
+            border: 1px solid #d3d3d3;
+            border-radius: 5px;
+        }
+        .teaching-home-link:hover {
+            background-color: #444;
         }
         main {
             display: flex;
@@ -53,16 +69,24 @@
         .category-links a.fivep:hover {
             background-color: #555; /* Darker grey for hover effect */
         }
+        .category-links a.data {
+            background-color: #999; /* Grey color for AI & Data link */
+        }
+        .category-links a.data:hover {
+            background-color: #777; /* Darker grey for hover effect */
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>ASE</h1>
+        <a class="teaching-home-link" href="https://kztoht.github.io/teaching/index.html">teaching home</a>
     </header>
     <main>
         <div class="category-links">
-            <a class="articles" href="articles1.html">Articles</a>
+            <a class="articles" href="article1.html">Articles</a>
             <a class="fivep" href="fivep.html">The Five-Paragraph Model</a>
+            <a class="data" href="data.html">AI & Data</a>
         </div>
     </main>
 </body>
