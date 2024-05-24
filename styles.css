@@ -13,3 +13,8 @@
 .incorrect {
   background-color: #ffcdd2; /* red */
 }
+
+p {
+  margin-top: 20px; /* Adjust the space above each paragraph */
+  margin-bottom: 20px; /* Adjust the space below each paragraph */
+}
