@@ -75,10 +75,3 @@ button:hover {
 .wrong {
     background-color: orange;
 }
-
-/* .link-container の高さを統一 */
-.link-container {
-    display: flex;
-    height: 50px; /* 必要に応じて高さを調整 */
-}
-
