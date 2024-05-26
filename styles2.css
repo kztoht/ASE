@@ -75,3 +75,15 @@ button:hover {
 .wrong {
     background-color: orange;
 }
+
+/* .link-container の高さを統一 */
+.link-container {
+    display: flex;
+    align-items: center; /* 垂直方向に中央揃え */
+    height: 50px; /* 必要に応じて高さを調整 */
+}
+
+.fancy-link {
+    margin: auto; /* 横方向にも中央揃え */
+}
+
