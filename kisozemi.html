@@ -1,92 +1,92 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
   <title>都立大大槻基礎ゼミへようこそ</title>
   <style>
-    /* Set cover.jpg as the full-page background */
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
-      background: url('cover.jpg') no-repeat center center fixed;
+      font-family: sans-serif;
+      /* 背景画像を全画面に表示 */
+      background: url("cover.jpg") no-repeat center center;
       background-size: cover;
-      color: #fff;
     }
-    /* A translucent overlay to ensure text is readable */
-    body::before {
-      content: "";
-      position: fixed;
+
+    .overlay {
+      /* 背景が少し暗くなるようにするための半透明オーバーレイ */
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: -1;
+      z-index: 1;
     }
-    header {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    main {
+
+    .container {
+      position: relative;
+      z-index: 2; /* オーバーレイの上に表示する */
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      min-height: 80vh;
-      padding: 20px;
+      height: 100vh;
+      text-align: center;
     }
-    .nav-links {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      width: 100%;
-      max-width: 600px;
-    }
-    .nav-links a {
-      text-decoration: none;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      background-color: rgba(255, 255, 255, 0.2);
-      border: 1px solid #fff;
-      border-radius: 5px;
+
+    h1 {
       color: #fff;
-      text-align: center;
-      transition: background-color 0.3s, transform 0.3s;
+      margin-bottom: 50px;
     }
+
+    .nav-links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .nav-links li {
+      margin: 15px 0;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1em;
+      padding: 10px 20px;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
     .nav-links a:hover {
-      background-color: rgba(255, 255, 255, 0.4);
-      transform: scale(1.05);
+      background-color: #fff;
+      color: #000;
     }
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: rgba(0, 0, 0, 0.7);
-      font-size: 0.9em;
+
+    /* 画面が小さい場合の調整（任意） */
+    @media (max-width: 600px) {
+      .nav-links a {
+        font-size: 1em;
+        padding: 8px 15px;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
+  <!-- オーバーレイ -->
+  <div class="overlay"></div>
+  
+  <!-- コンテナ -->
+  <div class="container">
     <h1>都立大大槻基礎ゼミへようこそ</h1>
-  </header>
-  <main>
-    <div class="nav-links">
-      <a href="intro.html">ゼミの概要</a>
-      <a href="quantitativeanalysis.html">社会を統計的に分析するということ</a>
-      <a href="R.html">データ分析プログラム言語「R」とは</a>
-      <a href="AI.html">生成AIの使い方</a>
-      <a href="classes.html">授業情報</a>
-    </div>
-  </main>
-  <footer>
-    <p>&copy; 2025 都立大大槻基礎ゼミ</p>
-  </footer>
+    <ul class="nav-links">
+      <li><a href="intro.html">ゼミの概要</a></li>
+      <li><a href="quantitativeanalysis.html">社会を統計的に分析するということ</a></li>
+      <li><a href="R.html">データ分析プログラム言語「R」とは</a></li>
+      <li><a href="AI.html">生成AIの使い方</a></li>
+      <li><a href="classes.html">授業情報</a></li>
+    </ul>
+  </div>
 </body>
 </html>
